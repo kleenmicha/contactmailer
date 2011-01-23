@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install>
+	<installer>
+		<name>Contact Mailer</name>
+		<title>Grundinstallation</title>
+		<version>1.5</version>
+		<wbbversion>2.3.5</wbbversion>
+		<description>Dies ist die Grundinstallation</description>
+		<updatefrom></updatefrom>
+		<sqlfile>install.contactmailer.sql</sqlfile>
+		<lngfile>install.contactmailer.lng</lngfile>
+		<wbbfile>install.contactmailer.wbb</wbbfile>
+		<templates>1</templates>
+		<acptemplates>1</acptemplates>
+	</installer>	
+	<files>
+		<filename>acp/images/detail.gif</filename>
+		<filename>acp/images/mail.gif</filename>
+		<filename>acp/images/trash.gif</filename>
+		<filename>acp/templates/acp_contact_maildel.htm</filename>
+		<filename>acp/templates/acp_contact_options.htm</filename>
+		<filename>acp/templates/acp_contact_optionsbit.htm</filename>
+		<filename>acp/templates/acp_contact_postdetail.htm</filename>
+		<filename>acp/templates/acp_contact_postdetail_fax.htm</filename>
+		<filename>acp/templates/acp_contact_postdetail_home.htm</filename>
+		<filename>acp/templates/acp_contact_postdetail_phone.htm</filename>
+		<filename>acp/templates/acp_contact_posts.htm</filename>
+		<filename>acp/templates/acp_contact_postsbit.htm</filename>
+		<filename>acp/acp_contact.php</filename>
+		<filename>components/com_contactmailer/images/contact_email.png</filename>
+		<filename>components/com_contactmailer/images/contact_error.png</filename>
+		<filename>components/com_contactmailer/images/contact_fax.png</filename>
+		<filename>components/com_contactmailer/images/contact_home.png</filename>
+		<filename>components/com_contactmailer/images/contact_personal.png</filename>
+		<filename>components/com_contactmailer/images/contact_phone.png</filename>
+		<filename>components/com_contactmailer/images/contact_send.png</filename>
+		<filename>components/com_contactmailer/contactmailer.css</filename>
+		<filename>components/com_contactmailer/contactmailer.xml</filename>
+		<filename>components/com_contactmailer/function_contactmailer.php</filename>
+		<filename>images/contact.gif</filename>
+		<filename>templates/contact.tpl</filename>
+		<filename>templates/contact_error.tpl</filename>
+		<filename>templates/contact_preview.tpl</filename>
+		<filename>templates/contact_send.tpl</filename>
+		<filename>templates/profile_contact.tpl</filename>
+		<filename>contact.php</filename>
+	</files>
+</install>

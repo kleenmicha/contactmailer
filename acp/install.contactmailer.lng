@@ -1,0 +1,105 @@
+# Languagepack-Export: Deutsch (export)
+# Languagecode: de
+# Date: 06.01.2006 13:48
+# wBB Version: 2.3.4
+
+
+
+[acp_contact]
+
+<text:LANG_ACP_CONTACT_DEL1>L&ouml;schen einer eingegangenen Nachricht</LANG_ACP_CONTACT_DEL1:text>
+<text:LANG_ACP_CONTACT_DEL2>Soll die Nachricht wirklich gel&ouml;scht werden?</LANG_ACP_CONTACT_DEL2:text>
+<text:LANG_ACP_CONTACT_DETAIL1>Details zum Eintrag von:</LANG_ACP_CONTACT_DETAIL1:text>
+<text:LANG_ACP_CONTACT_DETAIL10>zur&uuml;ck</LANG_ACP_CONTACT_DETAIL10:text>
+<text:LANG_ACP_CONTACT_DETAIL2>Name des Absenders</LANG_ACP_CONTACT_DETAIL2:text>
+<text:LANG_ACP_CONTACT_DETAIL3>Datum</LANG_ACP_CONTACT_DETAIL3:text>
+<text:LANG_ACP_CONTACT_DETAIL4>eMailadresse</LANG_ACP_CONTACT_DETAIL4:text>
+<text:LANG_ACP_CONTACT_DETAIL5>Betreff</LANG_ACP_CONTACT_DETAIL5:text>
+<text:LANG_ACP_CONTACT_DETAIL6>Inhalt der Mail</LANG_ACP_CONTACT_DETAIL6:text>
+<text:LANG_ACP_CONTACT_DETAIL7>Telefaxnummer</LANG_ACP_CONTACT_DETAIL7:text>
+<text:LANG_ACP_CONTACT_DETAIL8>Adresse</LANG_ACP_CONTACT_DETAIL8:text>
+<text:LANG_ACP_CONTACT_DETAIL9>Telefonnummer</LANG_ACP_CONTACT_DETAIL9:text>
+<text:LANG_ACP_CONTACT_OPTIONS1>Einstellungen</LANG_ACP_CONTACT_OPTIONS1:text>
+<text:LANG_ACP_CONTACT_OPTIONS_BLOCKTIME>Dauer der Sperre bis zum n&auml;chsten Eintrag</LANG_ACP_CONTACT_OPTIONS_BLOCKTIME:text>
+<text:LANG_ACP_CONTACT_OPTIONS_BLOCKTIME_DESC>Wie lang soll es dauern bis der Nutzer die n&auml;chste Anfrage stellen darf, in Sekunden.</LANG_ACP_CONTACT_OPTIONS_BLOCKTIME_DESC:text>
+<text:LANG_ACP_CONTACT_OPTIONS_SHOW_ADR>Adressfeld anzeigen?</LANG_ACP_CONTACT_OPTIONS_SHOW_ADR:text>
+<text:LANG_ACP_CONTACT_OPTIONS_SHOW_ADR_DESC>Wollen Sie das Adressfeld anzeigen lassen?</LANG_ACP_CONTACT_OPTIONS_SHOW_ADR_DESC:text>
+<text:LANG_ACP_CONTACT_OPTIONS_SHOW_FAX>Faxfeld anzeigen?</LANG_ACP_CONTACT_OPTIONS_SHOW_FAX:text>
+<text:LANG_ACP_CONTACT_OPTIONS_SHOW_FAX_DESC>Wollen Sie das Faxfeld anzeigen lassen?</LANG_ACP_CONTACT_OPTIONS_SHOW_FAX_DESC:text>
+<text:LANG_ACP_CONTACT_OPTIONS_SHOW_PHONE>Telefonnummer anzeigen?</LANG_ACP_CONTACT_OPTIONS_SHOW_PHONE:text>
+<text:LANG_ACP_CONTACT_OPTIONS_SHOW_PHONE_DESC>Wollen Sie das Adressfeld anzeigen lassen?</LANG_ACP_CONTACT_OPTIONS_SHOW_PHONE_DESC:text>
+<text:LANG_ACP_CONTACT_POSTS1>&Uuml;bersicht der Eing&auml;nge</LANG_ACP_CONTACT_POSTS1:text>
+<text:LANG_ACP_CONTACT_POSTS2>w&auml;hlen</LANG_ACP_CONTACT_POSTS2:text>
+<text:LANG_ACP_CONTACT_POSTS3>Inhalt(verk&uuml;rzt)</LANG_ACP_CONTACT_POSTS3:text>
+<text:LANG_ACP_CONTACT_POSTS4>Benutzer</LANG_ACP_CONTACT_POSTS4:text>
+<text:LANG_ACP_CONTACT_POSTS5>Name</LANG_ACP_CONTACT_POSTS5:text>
+<text:LANG_ACP_CONTACT_POSTS6>Antworten</LANG_ACP_CONTACT_POSTS6:text>
+<text:LANG_ACP_CONTACT_POSTS7>L&ouml;schen</LANG_ACP_CONTACT_POSTS7:text>
+<text:LANG_ACP_CONTACT_POSTS8>Details ansehen</LANG_ACP_CONTACT_POSTS8:text>
+
+
+
+[contact]
+
+<text:LANG_CONTACT_CONTACT>Kontakt</LANG_CONTACT_CONTACT:text>
+<text:LANG_CONTACT_CONTACTFORM>Kontaktformular</LANG_CONTACT_CONTACTFORM:text>
+<text:LANG_CONTACT_COPY><a href="$authorurl"><b>$name <acronym title="Erstellt am: $datum">$version</acronym></b> von <b>$authornick</b> &copy; $year</a></LANG_CONTACT_COPY:text>
+<text:LANG_CONTACT_EMAIL>E-Mail Adresse</LANG_CONTACT_EMAIL:text>
+<text:LANG_CONTACT_ERROR>Fehler</LANG_CONTACT_ERROR:text>
+<text:LANG_CONTACT_ERROR1>Sie m&uuml;ssen <span class="failure"><b>alle</b></span> Pflichtangaben ausf&uuml;llen!</LANG_CONTACT_ERROR1:text>
+<text:LANG_CONTACT_ERROR2><span class="failure">$email</span> ist <b>keine g&uuml;ltige</b> E-Mail Adresse! 
+<br />Bitte korrigieren Sie ihre Angaben!</LANG_CONTACT_ERROR2:text>
+<text:LANG_CONTACT_ERROR3>Sie haben bereits eine Anfrage geschickt, warten Sie <span class="failure">$blocktime</span> Sekunden bis zum n&auml;chsten Versuch</LANG_CONTACT_ERROR3:text>
+<text:LANG_CONTACT_ERROR4>Der angegebene Sicherheitscode ist nicht korrekt</LANG_CONTACT_ERROR4:text>
+<text:LANG_CONTACT_ERROR5>Sie haben bereits mehr als <span style="color: #F00;">$maxtry</span> mal den Falschen Code eingegeben!<br />
+Bitte f&uuml;llen Sie das Formular erneut aus und Tippe Sie den Code korrekt ab!</LANG_CONTACT_ERROR5:text>
+<text:LANG_CONTACT_FAX>Telefaxnummer</LANG_CONTACT_FAX:text>
+<text:LANG_CONTACT_FEMALE>Frau</LANG_CONTACT_FEMALE:text>
+<text:LANG_CONTACT_FIELD>&#42; = Pflichtangaben</LANG_CONTACT_FIELD:text>
+<text:LANG_CONTACT_FORM>Anrede</LANG_CONTACT_FORM:text>
+<text:LANG_CONTACT_HOME>PLZ /  Wohnort</LANG_CONTACT_HOME:text>
+<text:LANG_CONTACT_INSERT>Eintrag</LANG_CONTACT_INSERT:text>
+<text:LANG_CONTACT_KEIN> - </LANG_CONTACT_KEIN:text>
+<text:LANG_CONTACT_KEMAIL>Bitte geben Sie Ihre E-Mail Adresse ein</LANG_CONTACT_KEMAIL:text>
+<text:LANG_CONTACT_KEMAIL_DESC>Bitte geben Sie Ihre E-Mail Adresse im richtigen Format an.</LANG_CONTACT_KEMAIL_DESC:text>
+<text:LANG_CONTACT_KNAME>Bitte geben Sie Ihren vollst&auml;ndigen Namen ein</LANG_CONTACT_KNAME:text>
+<text:LANG_CONTACT_KSUB>Bitte geben Sie einen Betreff ein</LANG_CONTACT_KSUB:text>
+<text:LANG_CONTACT_KTEXT>Bitte geben Sie einen Text ein</LANG_CONTACT_KTEXT:text>
+<text:LANG_CONTACT_MALE>Herr</LANG_CONTACT_MALE:text>
+<text:LANG_CONTACT_MESSAGE>Anfrage</LANG_CONTACT_MESSAGE:text>
+<text:LANG_CONTACT_MESSAGE_COUNTER>Zeichen</LANG_CONTACT_MESSAGE_COUNTER:text>
+<text:LANG_CONTACT_MESSAGE_TOLONG>Bitte versuchen Sie das Ganze auf 1000 Zeichen zu begrenzen.</LANG_CONTACT_MESSAGE_TOLONG:text>
+<text:LANG_CONTACT_NAME>Name</LANG_CONTACT_NAME:text>
+<text:LANG_CONTACT_NAME_NO>Bitte geben Sie Ihren Namen ein.</LANG_CONTACT_NAME_NO:text>
+<text:LANG_CONTACT_PHONE>Telefonnummer</LANG_CONTACT_PHONE:text>
+<text:LANG_CONTACT_PLEASE>Bitte w&auml;hlen Sie eine Anrede</LANG_CONTACT_PLEASE:text>
+<text:LANG_CONTACT_PREVIEW>Vorschau</LANG_CONTACT_PREVIEW:text>
+<text:LANG_CONTACT_RESET>Zur&uuml;cksetzen</LANG_CONTACT_RESET:text>
+<text:LANG_CONTACT_SECURECODE>Sicherheitsma&szlig;nahme</LANG_CONTACT_SECURECODE:text>
+<text:LANG_CONTACT_SECURECODE_DESC>Bitte geben Sie die Zeichen aus der Grafik in das Eingabefeld ein.<br />(ohne Leerstellen)</LANG_CONTACT_SECURECODE_DESC:text>
+<text:LANG_CONTACT_SEND>Absenden</LANG_CONTACT_SEND:text>
+<text:LANG_CONTACT_SEND1>Ihre eMail wurde erfolgreich verschickt!</LANG_CONTACT_SEND1:text>
+<text:LANG_CONTACT_SEND2><br /> Sie erhalten auch eine eMail als Best&auml;tigung an ihre Adresse:</LANG_CONTACT_SEND2:text>
+<text:LANG_CONTACT_STREET>Stra&szlig;e / Hausnummer</LANG_CONTACT_STREET:text>
+<text:LANG_CONTACT_SUBJECT>Betreff</LANG_CONTACT_SUBJECT:text>
+<text:LANG_CONTACT_THANKS>$anr . \n\nvielen Dank für die Kontaktaufnahme!\n\nDie Anfrage wird bearbeitet und bei Bedarf beantwortet.\n\n\nMit freundlichen Grüßen \n\n\n\n Die Nachricht sah aus wie folgt:\n\n $nachricht1</LANG_CONTACT_THANKS:text>
+<text:LANG_CONTACT_VNAME>Vorname</LANG_CONTACT_VNAME:text>
+<text:LANG_CONTACT_VNAME_NO>Bitte geben Sie Ihren Vornamen ein.</LANG_CONTACT_VNAME_NO:text>
+
+
+
+[global]
+
+<text:LANG_GLOBAL_CONTACT>zum Kontaktformular</LANG_GLOBAL_CONTACT:text>
+
+
+
+[members]
+
+<text:LANG_MEMBERS_SENDCONTACT>Mit $username in Kontakt treten</LANG_MEMBERS_SENDCONTACT:text>
+
+
+
+[wiw]
+
+<text:LANG_WIW_FILE_CONTACT><a href="contact.php$SID_ARG_1ST" target="_blank">Benutzt das Kontaktformular</a></LANG_WIW_FILE_CONTACT:text>

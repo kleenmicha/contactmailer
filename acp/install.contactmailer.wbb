@@ -1,0 +1,51 @@
+<wBBgroupvariablegroup>
+	<name>KONTAKT</name>
+	<title>Kontakt</title>
+	<parent>USER</parent> 
+	<securitylevel>1</securitylevel>
+	<acpmode>1</acpmode>
+</wBBgroupvariablegroup>
+<wBBgroupvariable>
+	<name>can_use_contact</name>
+	<type>truefalse</type>
+	<defaultvalue>0</defaultvalue>
+	<title>Kontaktscriptnutzung</title>
+	<desc>Benutzer dieser Gruppe können das Kontaktformular nutzen.</desc>
+	<group>KONTAKT</group>
+	<acpmode>2</acpmode>
+</wBBgroupvariable>
+<wBBgroupvariable>
+	<name>a_can_contact_edit</name>
+	<type>truefalse</type>
+	<defaultvalue>0</defaultvalue>
+	<title>Contactmailer bearbeiten</title>
+	<desc>Benutzer dieser Gruppe können den Contactmailer verwalten.</desc>
+	<group>ADMIN_GENERAL</group>
+	<acpmode>2</acpmode>
+</wBBgroupvariable>
+<wBBacpmenuitemgroup>
+	<name>kontakt</name>
+	<condition></condition>
+	<conditiontype>OR</conditiontype>
+	<acpmode>2</acpmode>
+</wBBacpmenuitemgroup>
+<wBBacpmenuitem>
+	<name>contact_options</name>
+	<title><b>Contactmailer - Einstellungen</b></title>
+	<group>kontakt</group>
+	<link>acp_contact.php?action=options</link>
+	<linkformat></linkformat>
+	<condition>a_can_contact_edit</condition>
+	<conditiontype>OR</conditiontype>
+	<acpmode>2</acpmode>
+</wBBacpmenuitem>
+<wBBacpmenuitem>
+	<name>contact_posts</name>
+	<title>Contactmailer - eingehende Mails</title>
+	<group>kontakt</group>
+	<link>acp_contact.php?action=posts</link>
+	<linkformat></linkformat>
+	<condition>a_can_contact_edit</condition>
+	<conditiontype>OR</conditiontype>
+	<acpmode>2</acpmode>
+</wBBacpmenuitem>

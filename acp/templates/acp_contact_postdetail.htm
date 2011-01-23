@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="{$lang->items['LANG_GLOBAL_ENCODING']}"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{$lang->items['LANG_GLOBAL_DIRECTION']}" lang="{$lang->items['LANG_GLOBAL_LANGCODE']}" xml:lang="{$lang->items['LANG_GLOBAL_LANGCODE']}">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset={$lang->items['LANG_GLOBAL_ENCODING']}" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../components/com_contactmailer/contactmailer.css" />
+</head>
+<body>
+<table cellpadding="4" cellspacing="1" class="tblborder" style="width:100%; text-align:center">
+ <tr class="tblhead">
+  <td style="width:150px; text-align:left"><a href="acp_contact.php?action=posts&amp;sid=$session[hash]">{$lang->items['LANG_ACP_CONTACT_DETAIL10']}</a></td>
+  <td>{$lang->items['LANG_ACP_CONTACT_DETAIl1']} <a href="../profile.php?userid=$row[userid]" target="_blank">$row[username]</a></td>
+ </tr>
+</table>
+<div class="space">&nbsp;</div>
+<table cellpadding="4" cellspacing="1" class="tblborder" style="border: 0; width:100%; text-align:left">
+ <tr class="firstrow">
+  <td><b>{$lang->items['LANG_ACP_CONTACT_DETAIL2']}:</b></td>
+  <td>$row[name], $row[vorname]</td>
+ </tr>
+ <tr class="secondrow">
+  <td><b>{$lang->items['LANG_ACP_CONTACT_DETAIL3']}:</b></td>
+  <td>$dates, $time</td>
+ </tr>
+ <tr class="firstrow">
+  <td><b>{$lang->items['LANG_ACP_CONTACT_DETAIL4']}:</b></td>
+  <td>$row[email]</td>
+ </tr>
+ $home
+ $phone
+ $fax
+ <tr class="firstrow">
+  <td><b>{$lang->items['LANG_ACP_CONTACT_DETAIL5']}:</b></td>
+  <td>$row[title]</td>
+ </tr>
+ <tr class="secondrow">
+  <td><b>{$lang->items['LANG_ACP_CONTACT_DETAIL6']}:</b></td>
+  <td>$post</td></tr>
+ </tr>
+</table>
+<div class="space">&nbsp;</div>
+<div class="copyright">{$lang->items['LANG_CONTACT_COPY']}</div>
+</body>
+</html>

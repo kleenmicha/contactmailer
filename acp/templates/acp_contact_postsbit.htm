@@ -1,0 +1,10 @@
+<tr class="firstrow">	
+ <td><a href="acp_contact.php?action=viewdetail&amp;postid=$row[postid]&amp;sid=$session[hash]"><img src="images/detail.gif" border="0" alt="{$lang->items['LANG_ACP_CONTACT_POSTS8']}" title="{$lang->items['LANG_ACP_CONTACT_POSTS8']}" /></a></td>
+ <td>$dates</td>
+ <td>$row[username]</td>
+ <td>$row[name], $row[vorname]</td>
+ <td>$row[title]</td>
+ <td>$content</td>
+ <td><a href="mailto:$row[email]?subject=RE:$row[title]"><img src="images/mail.gif" border="0" alt="{$lang->items['LANG_ACP_CONTACT_POSTS6']}" title="{$lang->items['LANG_ACP_CONTACT_POSTS6']}" /></a></td>
+ <td><a href="acp_contact.php?action=delmail&amp;postid=$row[postid]&amp;sid=$session[hash]"><img src="images/trash.gif" border="0" alt="{$lang->items['LANG_ACP_CONTACT_POSTS7']}" title="{$lang->items['LANG_ACP_CONTACT_POSTS7']}" /></a></td>
+</tr> 

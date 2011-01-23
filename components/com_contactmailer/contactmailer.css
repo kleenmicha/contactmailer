@@ -1,0 +1,69 @@
+table.inner {
+ width: 100%;
+ border: 0;
+ margin: 0;
+ border-collapse: collapse
+}
+
+.content { width: 65%; }
+
+.content td { text-align: left; }
+
+.right {
+ font-weight: bold;
+ text-align: right;
+}
+
+.require {
+ text-align: right;
+ width: 65%;
+}
+
+td.tabletitle, .left, th {
+ font-weight: bold;
+ text-align: left;
+}
+
+.content th { width: 35%; white-space: nowrap; }
+
+td.icons { text-align: center; }
+
+.icons img { border: 0; }
+
+input.warning,
+textarea.warning {
+ color: #f00;
+ background: #F1BBBB;
+}
+
+label.warning {
+ clear: both;
+ float: left;
+ color: #f00;
+}
+
+div.copyright {
+ text-align: center;
+ margin: auto auto;
+ padding: 4px;
+ background: #FFF;
+ color: #000;
+ border: 1px solid #000;
+ width: 250px;
+}
+
+
+div.pages {
+ text-align: center;
+ margin: auto auto;
+ padding: 4px;
+}
+
+.space {
+ clear: both;
+ height: 10px;
+}
+
+.copyright a:link, .copyright a:active, .copyright a:hover, .copyright a:visited {
+ text-decoration: none;
+}
