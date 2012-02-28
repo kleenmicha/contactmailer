@@ -138,8 +138,7 @@ if(isset($_POST['send'])) {
 		//send thanksmail to user
 		$header2 = "From: Contactmailer\n";
    		$header2 .= "MIME-Version: 1.0\n";
-   		$header2 .= "Content-Type: text/plain;\n";
-   		$header2 .= "X-Mailer: PHP/".phpversion();
+   		$header2 .= "Content-Type: text/html\n X-Mailer: PHP/".phpversion();
 		$subject2 = "Danke für die Anfrage: ". $betreff;
 		$danke = $lang->get("LANG_CONTACT_THANKS", array('$anr' => $anr, '$nachricht1' => $nachricht1));
 		$an2 = "\"$name\" <$email>";
