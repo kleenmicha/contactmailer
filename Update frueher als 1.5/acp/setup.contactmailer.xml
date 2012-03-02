@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer>
+	<name>Contact Mailer</name>
+	<title>Update</title>
+	<version>1.5</version>
+	<wbbversion>2.3.6</wbbversion>
+	<description>Dies ist ein Update</description>
+	<updatefrom>1.4</updatefrom>
+	<lngfile>update15.contactmailer.lng</lngfile>
+	<sqlfile>update15.contactmailer.sql</sqlfile>
+	<templates>1</templates>
+	<acptemplates>1</acptemplates>
+</installer>

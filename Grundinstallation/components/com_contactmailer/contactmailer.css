@@ -36,11 +36,12 @@ textarea.warning {
  background: #F1BBBB;
 }
 
-label.warning {
- clear: both;
- float: left;
+label.warning,
+span.radioRequiredMsg {
+ padding-left: 2px;
  color: #f00;
 }
+
 
 div.copyright {
  text-align: center;

@@ -2,10 +2,10 @@
 /*
 *@Titel:		ContactMailer for wBB
 *@Filename:		acp_contact.php
-*@Version:		1.2.1
-*@Rev:			106
+*@Version:		1.5
+*@Rev:			107
 *@Autor:		Michael (KleenMicha) Schüler
-*@letzte Änderung:	08. Dezember 2006 um 15:26Uhr
+*@letzte Änderung:	29. Februar 2012 um 15:26Uhr
 *
 * @Hinweis zur Nutzung
 * - Der Copyright im Fußbereich darf weder entfernt noch verfremdet werden. Ist eine Entfernung gewünscht so bitte mit mir in Kontakt treten.
@@ -44,12 +44,13 @@ if ($action == 'options') {
 	if (isset($_POST['send'])) {
 		if (is_array($_POST['option'])) {
 		 reset($_POST['option']);
-		 while (list($conid, $value) = each($_POST['option'])) $db->query("UPDATE bb".$n."_contactsettings SET value='".addslashes($value)."' WHERE conid='". (int) $conid."'");
+		 while (list($conid, $value) = each($_POST['option'])) $db->query("UPDATE bb".$n."_contactsettings SET value='".addslashes($value)."' WHERE conid='".intval($conid)."'");
 		}
 		header("Location: acp_contact.php?action=options&sid=$session[hash]");
 		exit();	
 	}
 	
+	$contact_optionsbit = '';
 	$results = $db->query("SELECT * FROM bb".$n."_contactsettings");
 	while($row = $db->fetch_array($results)){
 		if ($row['optioncode'] == "text") $optioncode = "<input type=\"text\" name=\"option[$row[conid]]\" value=\"".htmlconverter($row['value'])."\" size=\"35\" />";
@@ -69,20 +70,20 @@ if ($action == 'options') {
 
 //Übersicht der eingegangenen mails
 if ($action == 'posts') {
-	if (isset($_REQUEST['page'])) $page = (int) $_REQUEST['page'];
-	elseif ($_REQUEST['page'] == 0) $page = 1;
+	if (isset($_REQUEST['page']) && $_REQUEST['page'] <> 0) $page = intval($_REQUEST['page']);
 	else $page = 1;
 	
 	$postsperpage = 20;
+	$contact_postsbit = '';
 
 	list($postcount) = $db->query_first("SELECT count(postid) FROM bb".$n."_contactpost");
 		
 	$result = $db->query("SELECT * FROM bb".$n."_contactpost", $postsperpage, $postsperpage * ($page - 1));
 	while($row = $db->fetch_array($result)) {
+		if ($row['userid'] <> 0) $row['username'] = "<a href=\"../profile.php?userid=$row[userid]\" target=\"_blank\">$row[username]</a>";
 		$dates = date('d.m.Y', $row['postdate']);
 		$content = wbb_substr($row['post'],0,30).'... ';
-		$count++;
-		
+
 		eval("\$contact_postsbit .= \"".$tpl->get("acp_contact_postsbit", 1)."\";");    
 	}
 	
@@ -98,12 +99,16 @@ if ($action == 'posts') {
 if ($action == 'viewdetail') {
 	$result = $db->query("SELECT * FROM bb".$n."_contactpost WHERE postid='$postid'");
 	while($row = $db->fetch_array($result)) {
+		if ($row['userid'] <> 0) $row['username'] = "<a href=\"../profile.php?userid=$row[userid]\" target=\"_blank\">$row[username]</a>";
 		$dates = date('d.m.Y', $row['postdate']);
 		$time = date('H:i', $row['postdate'])."Uhr";
-		if($row['street'] != '')	eval("\$home .= \"".$tpl->get("acp_contact_postdetail_home", 1)."\";");
-		if($row['phone'] != '')		eval("\$phone .= \"".$tpl->get("acp_contact_postdetail_phone", 1)."\";");
-		if($row['fax'] != '')		eval("\$fax .= \"".$tpl->get("acp_contact_postdetail_fax", 1)."\";");
-		$post = nl2br($row[post]);
+		if($row['street'] != '')	eval("\$home = \"".$tpl->get("acp_contact_postdetail_home", 1)."\";");
+		else $home = '';
+		if($row['phone'] != '')		eval("\$phone = \"".$tpl->get("acp_contact_postdetail_phone", 1)."\";");
+		else $phone = '';
+		if($row['fax'] != '')		eval("\$fax = \"".$tpl->get("acp_contact_postdetail_fax", 1)."\";");
+		else $fax = '';
+		$post = nl2br($row['post']);
 		
 		eval("\$tpl->output(\"".$tpl->get("acp_contact_postdetail", 1)."\",1);"); 
 	}

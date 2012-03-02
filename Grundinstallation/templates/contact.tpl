@@ -5,7 +5,7 @@
  <title>$master_board_name | {$lang->items['LANG_CONTACT_CONTACT']}</title>
  $headinclude
  <script type="text/javascript" src="components/include/jquery.min.js"></script>
- <script type="text/javascript" src="components/include/jquery.validate.js"></script>
+ <script type="text/javascript" src="components/include/jquery.validate.min.js"></script>
  <link href="components/com_contactmailer/contactmailer.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
@@ -22,6 +22,7 @@ $header
 </table><br />
 <div class="smallfont require">{$lang->items['LANG_CONTACT_FIELD']}</div>
 <form action="contact.php" method="post" id="contact_form">
+ <input type="hidden" name="addinfo" value="$randomNumTotal" />
  <table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" class="tableinborder content">
   <tr>
    <td class="tabletitle" colspan="3">
@@ -41,9 +42,10 @@ $header
   <tr id="genders">
    <th class="tablea smallfont">{$lang->items['LANG_CONTACT_FORM']}:*</th> 
    <td class="tablea smallfont$colem">
-    <label for="anrede">{$lang->items['LANG_CONTACT_MALE']}</label><input type="radio" name="anrede" value="Herr" id="men"  class="required" $checkbox[0] />
-    <label for="anrede">{$lang->items['LANG_CONTACT_FEMALE']}</label><input type="radio" name="anrede" value="Frau" id="women" $checkbox[1] /><br />
-    <span class="radioRequiredMsg">{$lang->items['LANG_CONTACT_PLEASE']}</span>
+    <label for="anrede">{$lang->items['LANG_CONTACT_MALE']}</label>
+    <input type="radio" name="anrede" value="Herr" id="men" class="required" $checkbox[0] />
+    <label for="anrede">{$lang->items['LANG_CONTACT_FEMALE']}</label>
+    <input type="radio" name="anrede" value="Frau" id="women" $checkbox[1] />
    </td> 
    <td class="tableb icons" rowspan="3"><img src="components/com_contactmailer/images/contact_personal.png" alt="{$lang->items['LANG_CONTACT_NAME']}" title="{$lang->items['LANG_CONTACT_NAME']}" /></td>
   </tr> 
@@ -91,13 +93,13 @@ $header
   </tr>
   <tr id="texts">
    <th class="tableb smallfont"><label for="text">{$lang->items['LANG_CONTACT_MESSAGE']}:&#42;</label></th>
-   <td colspan="2" class="tableb smallfont"><textarea name="text" id="text" cols="49" rows="12" class="input required">$text</textarea><br /><span id="counter">0</span>/1000 {$lang->items['LANG_CONTACT_MESSAGE_COUNTER']}</td>
+   <td colspan="2" class="tableb smallfont"><textarea name="text" id="text" cols="49" rows="12" class="input required minlength">$text</textarea><br /><span id="counter">0</span>/1000 {$lang->items['LANG_CONTACT_MESSAGE_COUNTER']}</td>
   </tr>
   <tr> 
    <th class="tablea smallfont"><label for="private_key">{$lang->items['LANG_CONTACT_SECURECODE']}:&#42;</label><br />
    {$lang->items['LANG_CONTACT_SECURECODE_DESC']}</th>
-   <td colspan="2" class="tablea"><input type="text" name="captchaImage" size="4" value="$randomNum + $randomNum2" disabled="disabled" />
-   <input type="text" name="private_key" id="private_key" size="5" maxlength="5" /></td> 
+   <td colspan="2" class="tablea smallfont"><input type="text" name="captchaImage" size="6" value="$randomNum + $randomNum2" disabled="disabled" class="input" />
+   <input type="text" name="private_key" id="private_key" size="5" maxlength="5" value="" class="input required digits" /></td> 
   </tr> 
   <tr> 
    <td class="tablea" style="text-align: center" colspan="3">
@@ -112,17 +114,15 @@ $header
 <div class="copyright smallfont">{$lang->items['LANG_CONTACT_COPY']}</div>
 $footer
  <script type='text/javascript'>
-  $.validator.methods.equal = function(value, element, param) {
-    return value == param;
-  };
   $(document).ready(function(){
    $("#contact_form").validate({
+	errorClass: "warning",
 	rules: {
-	  math: {
-	  equal: $randomNumTotal	
-	 }
-	},
-	errorClass: "warning"
+		text: {
+		  required: true,
+		  rangelength: [10, 1000]
+		}
+  }
    });
    $('#text').keyup(function() {
      var charLength = $(this).val().length;

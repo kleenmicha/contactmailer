@@ -1,0 +1,42 @@
+
+Installationsanleitung für den Contactmailer for wBB 2.3.x
+
+Version: 1.5
+
+Für: wBB 2.3.6
+
+Autor: KleenMicha (Michael Schüler) 
+
+Kontakt: michael@speedyservice.de
+
+Hinweis: 
+	Dies ist eine erweiterte Form des normalen Formailers, mit abschaltbaren Zeilen(Adresse/Telefon/Telefax).
+	Ziel der Mails ist die Emailadresse die im acp, unter: Kontakt-E-Mail-Adresse angegeben ist.
+	Weiterhin, kann die Gruppe festgelegt werden, die es nutzen darf.
+
+Haftungsausschluss:
+	Der Autor übernimmt keinerlei Haftung für Schäden und Fehler die nach, sowie bei dem Einbau des Hacks eintreten.
+
+
+Installationsbeginn:
+
+1.) Lade die folgenden neuen Dateien, aus dem Ordner: ./Grundinstallation hoch:
+./acp/acp_contact_postdetail.htm
+./acp/acp_contact.php
+./acp/setup.php
+./components/com_contactmailer/contactmailer.css
+./components/com_contactmailer/contactmailer.xml
+./components/include/jquery.min.js
+./components/include/jquery.validate.min.js
+./templates/contact.tpl
+./contact.php
+
+
+2.) Lade aus dem aktuellen Verzeichnis alle Dateien bis auf die Anleitung entsprechend ihrer Ordnung hoch
+
+3.) Ausführen der Datei: ./acp/setup.php und folgen der Schritte, vorher unbedingt: ./acp/lib/install.lock löschen
+
+4.) Lösche vom Webserver die Datei: 
+./components/include/jquery.validate.js
+
+Soweit ist alles fertig.

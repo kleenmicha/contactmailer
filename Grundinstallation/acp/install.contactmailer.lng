@@ -22,6 +22,8 @@
 <text:LANG_ACP_CONTACT_OPTIONS1>Einstellungen</LANG_ACP_CONTACT_OPTIONS1:text>
 <text:LANG_ACP_CONTACT_OPTIONS_BLOCKTIME>Dauer der Sperre bis zum n&auml;chsten Eintrag</LANG_ACP_CONTACT_OPTIONS_BLOCKTIME:text>
 <text:LANG_ACP_CONTACT_OPTIONS_BLOCKTIME_DESC>Wie lang soll es dauern bis der Nutzer die n&auml;chste Anfrage stellen darf, in Sekunden.</LANG_ACP_CONTACT_OPTIONS_BLOCKTIME_DESC:text>
+<text:LANG_ACP_CONTACT_OPTIONS_SENDNAME>Absendername</LANG_ACP_CONTACT_OPTIONS_SENDNAME:text>
+<text:LANG_ACP_CONTACT_OPTIONS_SENDNAME_DESC>Unter welchem Namen soll die Dankeschön E-Mail versendet werden?<br/>(Beispiel: <b>noreply@meinedomain.tld</b>)</LANG_ACP_CONTACT_OPTIONS_SENDNAME_DESC:text>
 <text:LANG_ACP_CONTACT_OPTIONS_SHOW_ADR>Adressfeld anzeigen?</LANG_ACP_CONTACT_OPTIONS_SHOW_ADR:text>
 <text:LANG_ACP_CONTACT_OPTIONS_SHOW_ADR_DESC>Wollen Sie das Adressfeld anzeigen lassen?</LANG_ACP_CONTACT_OPTIONS_SHOW_ADR_DESC:text>
 <text:LANG_ACP_CONTACT_OPTIONS_SHOW_FAX>Faxfeld anzeigen?</LANG_ACP_CONTACT_OPTIONS_SHOW_FAX:text>
@@ -51,8 +53,6 @@
 <br />Bitte korrigieren Sie ihre Angaben!</LANG_CONTACT_ERROR2:text>
 <text:LANG_CONTACT_ERROR3>Sie haben bereits eine Anfrage geschickt, warten Sie <span class="failure">$blocktime</span> Sekunden bis zum n&auml;chsten Versuch</LANG_CONTACT_ERROR3:text>
 <text:LANG_CONTACT_ERROR4>Der angegebene Sicherheitscode ist nicht korrekt</LANG_CONTACT_ERROR4:text>
-<text:LANG_CONTACT_ERROR5>Sie haben bereits mehr als <span style="color: #F00;">$maxtry</span> mal den Falschen Code eingegeben!<br />
-Bitte f&uuml;llen Sie das Formular erneut aus und Tippe Sie den Code korrekt ab!</LANG_CONTACT_ERROR5:text>
 <text:LANG_CONTACT_FAX>Telefaxnummer</LANG_CONTACT_FAX:text>
 <text:LANG_CONTACT_FEMALE>Frau</LANG_CONTACT_FEMALE:text>
 <text:LANG_CONTACT_FIELD>&#42; = Pflichtangaben</LANG_CONTACT_FIELD:text>
@@ -76,13 +76,20 @@ Bitte f&uuml;llen Sie das Formular erneut aus und Tippe Sie den Code korrekt ab!
 <text:LANG_CONTACT_PREVIEW>Vorschau</LANG_CONTACT_PREVIEW:text>
 <text:LANG_CONTACT_RESET>Zur&uuml;cksetzen</LANG_CONTACT_RESET:text>
 <text:LANG_CONTACT_SECURECODE>Sicherheitsma&szlig;nahme</LANG_CONTACT_SECURECODE:text>
-<text:LANG_CONTACT_SECURECODE_DESC>Bitte geben Sie die Zeichen aus der Grafik in das Eingabefeld ein.<br />(ohne Leerstellen)</LANG_CONTACT_SECURECODE_DESC:text>
+<text:LANG_CONTACT_SECURECODE_DESC>Bitte geben Sie die Lösung in das nebenstehende Feld ein.<br />(ohne Leerstellen)</LANG_CONTACT_SECURECODE_DESC:text>
 <text:LANG_CONTACT_SEND>Absenden</LANG_CONTACT_SEND:text>
 <text:LANG_CONTACT_SEND1>Ihre eMail wurde erfolgreich verschickt!</LANG_CONTACT_SEND1:text>
 <text:LANG_CONTACT_SEND2><br /> Sie erhalten auch eine eMail als Best&auml;tigung an ihre Adresse:</LANG_CONTACT_SEND2:text>
 <text:LANG_CONTACT_STREET>Stra&szlig;e / Hausnummer</LANG_CONTACT_STREET:text>
 <text:LANG_CONTACT_SUBJECT>Betreff</LANG_CONTACT_SUBJECT:text>
-<text:LANG_CONTACT_THANKS>$anr . \n\nvielen Dank für die Kontaktaufnahme!\n\nDie Anfrage wird bearbeitet und bei Bedarf beantwortet.\n\n\nMit freundlichen Grüßen \n\n\n\n Die Nachricht sah aus wie folgt:\n\n $nachricht1</LANG_CONTACT_THANKS:text>
+<text:LANG_CONTACT_THANKS>$anr. vielen Dank f&uuml;r die Kontaktaufnahme! Die Anfrage wird bearbeitet und bei Bedarf beantwortet.
+<br/><br/>
+Mit freundlichen Grüßen
+<br/><br/>
+Die Nachricht sah aus wie folgt:
+
+$nachricht1
+</LANG_CONTACT_THANKS:text>
 <text:LANG_CONTACT_VNAME>Vorname</LANG_CONTACT_VNAME:text>
 <text:LANG_CONTACT_VNAME_NO>Bitte geben Sie Ihren Vornamen ein.</LANG_CONTACT_VNAME_NO:text>
 

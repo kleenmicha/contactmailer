@@ -1,0 +1,25 @@
+# Languagepack-Export: Deutsch (export)
+# Languagecode: de
+# Date: 06.01.2006 13:48
+# wBB Version: 2.3.4
+
+
+
+[acp_contact]
+
+<text:LANG_ACP_CONTACT_OPTIONS_SENDNAME>Absendername</LANG_ACP_CONTACT_OPTIONS_SENDNAME:text>
+<text:LANG_ACP_CONTACT_OPTIONS_SENDNAME_DESC>Unter welchem Namen soll die Dankeschön E-Mail versendet werden?<br/>(Beispiel: <b>noreply@meinedomain.tld</b>)</LANG_ACP_CONTACT_OPTIONS_SENDNAME_DESC:text>
+
+
+
+[contact]
+
+<text:LANG_CONTACT_THANKS>$anr. vielen Dank f&uuml;r die Kontaktaufnahme! Die Anfrage wird bearbeitet und bei Bedarf beantwortet.
+<br/><br/>
+Mit freundlichen Grüßen
+<br/><br/>
+Die Nachricht sah aus wie folgt:
+
+$nachricht1
+</LANG_CONTACT_THANKS:text>
+<text:LANG_CONTACT_SECURECODE_DESC>Bitte geben Sie die Lösung in das nebenstehende Feld ein.<br />(ohne Leerstellen)</LANG_CONTACT_SECURECODE_DESC:text>

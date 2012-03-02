@@ -1,13 +1,13 @@
 
 Installationsanleitung für den Contactmailer for wBB 2.3.x
 
-Version: 1.4
+Version: 1.5
 
 Für: wBB 2.3.6
 
 Autor: KleenMicha (Michael Schüler) 
 
-Kontakt: webmaster@speedyforum.de
+Kontakt: michael@speedyservice.de
 
 Hinweis: 
 	Dies ist eine erweiterte Form des normalen Formailers, mit abschaltbaren Zeilen(Adresse/Telefon/Telefax).
@@ -16,9 +16,6 @@ Hinweis:
 
 Haftungsausschluss:
 	Der Autor übernimmt keinerlei Haftung für Schäden und Fehler die nach, sowie bei dem Einbau des Hacks eintreten.
-	Der Support zu der Erweiterung erfolgt nur in den beiden Supportforen: www.speedyforum.de und www.yourwbb.info.
-	Weiterhin darf die Erweiterung nicht woanders angeboten, geschweigenden  Komplett oder in Teilen als
-	die eigene ausgegeben werden.
 
 
 Installationsbeginn:
@@ -107,7 +104,7 @@ $user['email'] = $posts['email'];
 if ($posts['showemail'] == 1 || $posts['usercanemail'] == 1) $LANG_MEMBERS_SENDEMAIL = $lang->get("LANG_MEMBERS_SENDEMAIL", array('$username' => $username));
 
 ##Und füge darunter folgendes:
-if($webmastermail == $user['email'] && $wbbuserdata['can_use_contact']==1) $lang->items['LANG_MEMBERS_SENDCONTACT'] = $lang->get("LANG_MEMBERS_SENDCONTACT", array('$username' => $username));
+if ($webmastermail == $user['email'] && $wbbuserdata['can_use_contact']==1) $lang->items['LANG_MEMBERS_SENDCONTACT'] = $lang->get("LANG_MEMBERS_SENDCONTACT", array('$username' => $username));
 
 
 
@@ -158,9 +155,6 @@ if($webmastermail == $user['email'] && $wbbuserdata['can_use_contact']==1) $lang
  </else>
 </if>
 
-3.) Importieren der neuen Templates:
-    Dazu einfach auf: Templates importieren->Inhalt darstellen (die hinaufgeladenen Templates wählen)
-    Import Starten->Templates->nur neue Templates cachen
 
 4.) Nun die Gruppen festlegen, welche das Formular nutzen dürfen, über:
     Gruppen bearbeiten->"Gruppe wählen"->Benutzerrechte-> Kontaktscriptnutzung -> Ja

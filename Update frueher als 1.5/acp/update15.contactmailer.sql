@@ -1,0 +1,1 @@
+INSERT INTO bb1_contactsettings (conid, varname, value, optioncode) VALUES (5, 'sendname', 'noreply', 'text');

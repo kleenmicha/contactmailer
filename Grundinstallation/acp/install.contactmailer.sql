@@ -40,4 +40,5 @@ INSERT INTO bb1_contactsettings (conid, varname, value, optioncode) VALUES
 (1, 'blocktime', '60', 'text'),
 (2, 'show_adr', 0, 'truefalse'),
 (3, 'show_phone', 0, 'truefalse'),
-(4, 'show_fax', 0, 'truefalse');
+(4, 'show_fax', 0, 'truefalse'),
+(5, 'sendname', 'noreply', 'text');
