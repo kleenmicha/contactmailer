@@ -26,7 +26,7 @@ function flood($userid, $ipaddress, $blocktime) {
 	global $db, $n, $blocktime;
 
 	if($userid != 0) $result = $db->query_first("SELECT postid FROM bb".$n."_contactpost WHERE userid='". (int) $userid."' AND postdate>='".(time() - $blocktime)."'", 1);	
-	else $result = $db->query_first("SELECT postid FROM bb".$n."_contactpost WHERE ipaddresse='$ipaddress' AND postdate>='".(time() - $blocktime)."'", 1);
+	else $result = $db->query_first("SELECT postid FROM bb".$n."_contactpost WHERE ipadresse='$ipaddress' AND postdate>='".(time() - $blocktime)."'", 1);
 	
 	if ($result['postid']) return true;
 	else return false;	
