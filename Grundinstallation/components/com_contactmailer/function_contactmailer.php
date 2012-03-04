@@ -2,10 +2,10 @@
 /*
 *@Titel:		ContactMailer for wBB
 *@Filename:		function_contactmailer.php
-*@Version:		1.3
-*@Rev:			106
+*@Version:		1.5
+*@Rev:			107
 *@Autor:		Michael (KleenMicha) Schüler
-*@letzte Änderung:	20. Dezember 2006 um 17:19Uhr
+*@letzte Änderung:	04. Maerz 2012 um 13:19Uhr
 *
 * @Hinweis zur Nutzung
 * - Der Copyright im Fußbereich darf weder entfernt noch verfremdet werden. Ist eine Entfernung gewünscht so bitte mit mir in Kontakt treten.
@@ -26,7 +26,7 @@ function flood($userid, $ipaddress, $blocktime) {
 	global $db, $n, $blocktime;
 
 	if($userid != 0) $result = $db->query_first("SELECT postid FROM bb".$n."_contactpost WHERE userid='". (int) $userid."' AND postdate>='".(time() - $blocktime)."'", 1);	
-	else $result = $db->query_first("SELECT postid FROM bb".$n."_contactpost WHERE ipaddress='$ipaddress' AND postdate>='".(time() - $blocktime)."'", 1);
+	else $result = $db->query_first("SELECT postid FROM bb".$n."_contactpost WHERE ipaddresse='$ipaddress' AND postdate>='".(time() - $blocktime)."'", 1);
 	
 	if ($result['postid']) return true;
 	else return false;	
