@@ -139,7 +139,7 @@ if ($webmastermail == $user['email'] && $wbbuserdata['can_use_contact']==1) $lan
 <if($posts['showemail']==1)>
  <then>
   <if($webmastermail==$user['email'] && $wbbuserdata['can_use_contact']==1)>
-   <then><a href="contact.php{$SID_ARG_1ND}"><img src="{$style['imagefolder']}/contact.gif" border="0" alt="{$lang->items['LANG_MEMBERS_SENDCONTACT']}" title="{$lang->items['LANG_MEMBERS_SENDCONTACT']}" /></a></then>
+   <then><a href="contact.php{$SID_ARG_1ST}"><img src="{$style['imagefolder']}/contact.gif" border="0" alt="{$lang->items['LANG_MEMBERS_SENDCONTACT']}" title="{$lang->items['LANG_MEMBERS_SENDCONTACT']}" /></a></then>
    <else><a href="mailto:$posts[email]"><img src="{$style['imagefolder']}/email.gif" border="0" alt="{$LANG_MEMBERS_SENDEMAIL}" title="{$LANG_MEMBERS_SENDEMAIL}" /></a></else>
   </if>
  </then>
@@ -147,7 +147,7 @@ if ($webmastermail == $user['email'] && $wbbuserdata['can_use_contact']==1) $lan
   <if($posts['usercanemail']==1)>
    <then>
     <if($webmastermail==$user['email'] && $wbbuserdata['can_use_contact']==1)>
-    <then><a href="contact.php{$SID_ARG_1ND}"><img src="{$style['imagefolder']}/contact.gif" border="0" alt="{$lang->items['LANG_MEMBERS_SENDCONTACT']}" title="{$lang->items['LANG_MEMBERS_SENDCONTACT']}" /></a></then>
+    <then><a href="contact.php{$SID_ARG_1ST}"><img src="{$style['imagefolder']}/contact.gif" border="0" alt="{$lang->items['LANG_MEMBERS_SENDCONTACT']}" title="{$lang->items['LANG_MEMBERS_SENDCONTACT']}" /></a></then>
     <else><a href="formmail.php?userid=$posts[userid]{$SID_ARG_2ND}"><img src="{$style['imagefolder']}/email.gif" border="0" alt="{$LANG_MEMBERS_SENDEMAIL}" title="{$LANG_MEMBERS_SENDEMAIL}" /></a></else>
    </if>
    </then>
